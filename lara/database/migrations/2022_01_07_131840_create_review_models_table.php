@@ -16,6 +16,9 @@ class CreateReviewModelsTable extends Migration
         Schema::create('review_models', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('email');
+            $table->string('subject');
+            $table->text('message');
         });
     }
 

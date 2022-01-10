@@ -30,5 +30,12 @@
     <button type="submit" class="btn btn-primary">Subimitti</button>
 </form>
 <br>
+<h1>Інші відгуки</h1>
+@foreach($rew as $elPaso)
+<h3>{{$elPaso->subject}}</h3>
+<span>{{$elPaso->id}}</span>
+<p>{{$elPaso->message}}</p>
+@endforeach
+<div></div>
 <button class="btn btn-dark"><a href="/">return</a></button>
 @endsection

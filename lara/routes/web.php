@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Route::get('/', [MainController::class, 'about']);
 
-Route::get('/review', [MainController::class, 'review']);
+Route::get('/review', [MainController::class, 'review'])->name('review');
 
 Route::post('/review/check', [MainController::class, 'review_check']);
 // Route::get('/mel', function () {
